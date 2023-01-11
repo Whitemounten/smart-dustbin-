@@ -19,8 +19,8 @@ void loop()
  delayMicroseconds(2);
  digitalWrite(trig,LOW);
 
- float zaman = pulseIn(echo,HIGH);
- float cm = zaman/58.2;                
+ float time = pulseIn(echo,HIGH);
+ float cm = time/58.2;                
  delay(3000);
 
  if (cm <10 ){
